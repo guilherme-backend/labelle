@@ -1,5 +1,5 @@
 // Substitua este número pelo WhatsApp real da La Belle, com DDI e DDD.
-const whatsappNumber = "5521999999999";
+const whatsappNumber = "5521974307694";
 
 const products = [
   {
