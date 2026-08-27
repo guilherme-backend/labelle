@@ -7,10 +7,10 @@ const products = [
     preco: 21.9,
     categoria: "renda",
     cores: [
-      { nome: "Preto", imagem: "assets/IMG_5168.jpg", cor: "#151114" },
-      { nome: "Vermelho", imagem: "assets/IMG_5170.jpg", cor: "#9f1f32" },
-      { nome: "Branco", imagem: "assets/IMG_5183.jpg", cor: "#fffaf7" },
-      { nome: "Rosa", imagem: "assets/IMG_5164.jpg", cor: "#e7a6b7" },
+      { nome: "Preto", imagem: "assets/IMG_5168.JPG", cor: "#151114" },
+      { nome: "Vermelho", imagem: "assets/IMG_5170.JPG", cor: "#9f1f32" },
+      { nome: "Branco", imagem: "assets/IMG_5183.JPG", cor: "#fffaf7" },
+      { nome: "Rosa", imagem: "assets/IMG_5164.JPG", cor: "#e7a6b7" },
     ],
   },
   { 
@@ -18,9 +18,9 @@ const products = [
     preco: 24.9,
     categoria: "conforto",
     cores: [
-      { nome: "Branco", imagem: "assets/produto2.jpg", cor: "#fffaf7" },
-      { nome: "Rosa", imagem: "assets/produto2.jpg", cor: "#e7a6b7" },
-      { nome: "Azul", imagem: "assets/produto2.jpg", cor: "#557c9f" },
+      { nome: "Branco", imagem: "assets/IMG_5183.JPG", cor: "#fffaf7" },
+      { nome: "Rosa", imagem: "assets/IMG_5164.JPG", cor: "#e7a6b7" },
+      { nome: "Azul", imagem: "assets/IMG_5170.JPG", cor: "#557c9f" },
     ],
   },
   {
@@ -28,9 +28,9 @@ const products = [
     preco: 34.9,
     categoria: "premium",
     cores: [
-      { nome: "Vinho", imagem: "assets/produto3.jpg", cor: "#571d2d" },
-      { nome: "Preto", imagem: "assets/produto3.jpg", cor: "#151114" },
-      { nome: "Champagne", imagem: "assets/produto3.jpg", cor: "#d8b891" },
+      { nome: "Vinho", imagem: "assets/IMG_5170.JPG", cor: "#571d2d" },
+      { nome: "Preto", imagem: "assets/IMG_5168.JPG", cor: "#151114" },
+      { nome: "Champagne", imagem: "assets/IMG_5183.JPG", cor: "#d8b891" },
     ],
   },
   {
@@ -38,9 +38,9 @@ const products = [
     preco: 32.9,
     categoria: "renda",
     cores: [
-      { nome: "Vermelho", imagem: "assets/produto4.jpg", cor: "#9f1f32" },
-      { nome: "Rosa", imagem: "assets/produto4.jpg", cor: "#e7a6b7" },
-      { nome: "Branco", imagem: "assets/produto4.jpg", cor: "#fffaf7" },
+      { nome: "Vermelho", imagem: "assets/IMG_5170.JPG", cor: "#9f1f32" },
+      { nome: "Rosa", imagem: "assets/IMG_5164.JPG", cor: "#e7a6b7" },
+      { nome: "Branco", imagem: "assets/IMG_5183.JPG", cor: "#fffaf7" },
     ],
   },
   {
@@ -48,9 +48,9 @@ const products = [
     preco: 27.9,
     categoria: "conforto",
     cores: [
-      { nome: "Rosa", imagem: "assets/produto5.jpg", cor: "#e7a6b7" },
-      { nome: "Branco", imagem: "assets/produto5.jpg", cor: "#fffaf7" },
-      { nome: "Preto", imagem: "assets/produto5.jpg", cor: "#151114" },
+      { nome: "Rosa", imagem: "assets/IMG_5164.JPG", cor: "#e7a6b7" },
+      { nome: "Branco", imagem: "assets/IMG_5183.JPG", cor: "#fffaf7" },
+      { nome: "Preto", imagem: "assets/IMG_5168.JPG", cor: "#151114" },
     ],
   },
   {
@@ -58,9 +58,9 @@ const products = [
     preco: 39.9,
     categoria: "premium",
     cores: [
-      { nome: "Preto", imagem: "assets/produto6.jpg", cor: "#151114" },
-      { nome: "Vinho", imagem: "assets/produto6.jpg", cor: "#571d2d" },
-      { nome: "Champagne", imagem: "assets/produto6.jpg", cor: "#d8b891" },
+      { nome: "Preto", imagem: "assets/IMG_5168.JPG", cor: "#151114" },
+      { nome: "Vinho", imagem: "assets/IMG_5170.JPG", cor: "#571d2d" },
+      { nome: "Champagne", imagem: "assets/IMG_5183.JPG", cor: "#d8b891" },
     ],
   },
 ];
