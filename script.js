@@ -3,8 +3,8 @@ const whatsappNumber = "5521999999999";
 
 const products = [
   {
-    nome: "Calcinha Renda",
-    preco: 29.9,
+    nome: "Calcinha Lesy Sexy",
+    preco: 21.9,
     categoria: "renda",
     cores: [
       { nome: "Preto", imagem: "assets/IMG_5168.jpg", cor: "#151114" },
@@ -13,7 +13,7 @@ const products = [
       { nome: "Rosa", imagem: "assets/IMG_5164.jpg", cor: "#e7a6b7" },
     ],
   },
-  {
+  { 
     nome: "Calcinha Confort",
     preco: 24.9,
     categoria: "conforto",
