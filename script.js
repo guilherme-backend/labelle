@@ -7,10 +7,10 @@ const products = [
     preco: 29.9,
     categoria: "renda",
     cores: [
-      { nome: "Preto", imagem: "assets/IMG_5168.JPG", cor: "#151114" },
-      { nome: "Vermelho", imagem: "assets/IMG_5170.JPG", cor: "#9f1f32" },
-      { nome: "Branco", imagem: "assets/IMG_5183.JPG", cor: "#fffaf7" },
-      { nome: "Rosa", imagem: "assets/IMG_5164.JPG", cor: "#e7a6b7" },
+      { nome: "Preto", imagem: "assets/IMG_5168.jpg", cor: "#151114" },
+      { nome: "Vermelho", imagem: "assets/IMG_5170.jpg", cor: "#9f1f32" },
+      { nome: "Branco", imagem: "assets/IMG_5183.jpg", cor: "#fffaf7" },
+      { nome: "Rosa", imagem: "assets/IMG_5164.jpg", cor: "#e7a6b7" },
     ],
   },
   {
