@@ -37,7 +37,7 @@ const products = [
     categoria: "conforto",
     cores: [
       { nome: "Preto", imagem: "assets/IMG_4698.JPG", cor: "#151114" },
-      { nome: "Rosa", imagem: "assets/IMG_0000.JPG", cor: "#e2587d" },
+      { nome: "Rosa", imagem: "assets/IMG_0000.png", cor: "#e2587d" },
       { nome: "Verde  ", imagem: "assets/IMG_7004.JPG", cor: "#235834" },
     ],
   },
@@ -46,7 +46,7 @@ const products = [
     preco: 34.9,
     categoria: "premium",
     cores: [
-      { nome: "Vermelho", imagem: "assets/EOSR2361.JPEG", cor: "#d10d0d" },
+      { nome: "Vermelho", imagem: "assets/EOSR2361.jpeg", cor: "#d10d0d" },
      
     ],
   },
