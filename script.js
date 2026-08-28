@@ -12,24 +12,42 @@ const products = [
       { nome: "Rosa", imagem: "assets/IMG_5164.JPG", cor: "#e7a6b7" },
     ],
   },
-  { 
-    nome: "Calcinha Confort",
-    preco: 24.9,
+
+    {
+    nome: "Calcinha Argola Rendada",
+    preco: 27.9,
     categoria: "conforto",
     cores: [
-      { nome: "Branco", imagem: "assets/IMG_5183.JPG", cor: "#fffaf7" },
-      { nome: "Rosa", imagem: "assets/IMG_5164.JPG", cor: "#e7a6b7" },
-      { nome: "Azul", imagem: "assets/IMG_5170.JPG", cor: "#557c9f" },
+      { nome: "Branco", imagem: "assets/argola/IMG_3206.JPG", cor: "#fffaf7" },
+      { nome: "Rosa", imagem: "assets/argola/IMG_3200.JPG", cor: "#e7a6b7" },
+      { nome: "Nude", imagem: "assets/argola/IMG_3209.JPG", cor: "#E3C6A8" },
     ],
   },
   {
-    nome: "Calcinha Elegance",
+    nome: "Calcinha Regulável",
+    preco: 39.9,
+    categoria: "premium",
+    cores: [
+      { nome: "Preto", imagem: "assets/IMG_2849.JPG", cor: "#151114" },
+    ],
+  },
+  { 
+    nome: "Calcinha Palloma",
+    preco: 24.9,
+    categoria: "conforto",
+    cores: [
+      { nome: "Preto", imagem: "assets/IMG_4698.JPG", cor: "#151114" },
+      { nome: "Rosa", imagem: "assets/IMG_0000.JPG", cor: "#e2587d" },
+      { nome: "Verde  ", imagem: "assets/IMG_7004.JPG", cor: "#235834" },
+    ],
+  },
+  {
+    nome: "Conjunto Ravenna",
     preco: 34.9,
     categoria: "premium",
     cores: [
-      { nome: "Vinho", imagem: "assets/IMG_5170.JPG", cor: "#571d2d" },
-      { nome: "Preto", imagem: "assets/IMG_5168.JPG", cor: "#151114" },
-      { nome: "Champagne", imagem: "assets/IMG_5183.JPG", cor: "#d8b891" },
+      { nome: "Vermelho", imagem: "assets/EOSR2361.JPEG", cor: "#d10d0d" },
+     
     ],
   },
   {
@@ -42,24 +60,38 @@ const products = [
       { nome: "Branco", imagem: "assets/IMG_5183.JPG", cor: "#fffaf7" },
     ],
   },
+
+
   {
-    nome: "Calcinha Soft",
+    nome: "Calcinha Argola Rendada",
     preco: 27.9,
     categoria: "conforto",
     cores: [
-      { nome: "Rosa", imagem: "assets/IMG_5164.JPG", cor: "#e7a6b7" },
-      { nome: "Branco", imagem: "assets/IMG_5183.JPG", cor: "#fffaf7" },
-      { nome: "Preto", imagem: "assets/IMG_5168.JPG", cor: "#151114" },
+      { nome: "Rosa", imagem: "assets/argola/IMG_3206.JPG", cor: "#fffaf7" },
+      { nome: "Branco", imagem: "assets/argola/IMG_3200.JPG", cor: "#e7a6b7" },
+      { nome: "Preto", imagem: "assets/argola/IMG_3209.JPG", cor: "#151114" },
     ],
   },
+
   {
-    nome: "Calcinha Premium",
-    preco: 39.9,
-    categoria: "premium",
+    nome: "Calcinha Argola Rendada",
+    preco: 27.9,
+    categoria: "conforto",
     cores: [
-      { nome: "Preto", imagem: "assets/IMG_5168.JPG", cor: "#151114" },
-      { nome: "Vinho", imagem: "assets/IMG_5170.JPG", cor: "#571d2d" },
-      { nome: "Champagne", imagem: "assets/IMG_5183.JPG", cor: "#d8b891" },
+      { nome: "Rosa", imagem: "assets/argola/IMG_3206.JPG", cor: "#fffaf7" },
+      { nome: "Branco", imagem: "assets/argola/IMG_3200.JPG", cor: "#e7a6b7" },
+      { nome: "Preto", imagem: "assets/argola/IMG_3209.JPG", cor: "#151114" },
+    ],
+  },
+
+  {
+    nome: "Calcinha Argola Rendada",
+    preco: 27.9,
+    categoria: "conforto",
+    cores: [
+      { nome: "Rosa", imagem: "assets/argola/IMG_3206.JPG", cor: "#fffaf7" },
+      { nome: "Branco", imagem: "assets/argola/IMG_3200.JPG", cor: "#e7a6b7" },
+      { nome: "Preto", imagem: "assets/argola/IMG_3209.JPG", cor: "#151114" },
     ],
   },
 ];
