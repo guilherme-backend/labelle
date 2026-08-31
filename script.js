@@ -15,7 +15,7 @@ const products = [
 
     {
     nome: "Calcinha Argola Rendada",
-    preco: 27.9,
+    preco: 20.9,
     categoria: "conforto",
     cores: [
       { nome: "Branco", imagem: "assets/argola/IMG_3206.JPG", cor: "#fffaf7" },
@@ -25,7 +25,7 @@ const products = [
   },
   {
     nome: "Calcinha Regulável",
-    preco: 39.9,
+    preco: 16.9,
     categoria: "premium",
     cores: [
       { nome: "Preto", imagem: "assets/IMG_2849.JPG", cor: "#151114" },
@@ -43,55 +43,65 @@ const products = [
   },
   {
     nome: "Conjunto Ravenna",
-    preco: 34.9,
+    preco: 44.9,
     categoria: "premium",
     cores: [
       { nome: "Vermelho", imagem: "assets/EOSR2361.jpeg", cor: "#d10d0d" },
+      { nome: "Preto", imagem: "assets/IMG_1111.png", cor: "#000000" },
      
     ],
   },
+
   {
-    nome: "Calcinha Romance",
-    preco: 32.9,
-    categoria: "renda",
+    nome: "Calcinha Comfy",
+    preco: 21.9,
+    categoria: "conforto",
     cores: [
-      { nome: "Vermelho", imagem: "assets/IMG_5170.JPG", cor: "#9f1f32" },
-      { nome: "Rosa", imagem: "assets/IMG_5164.JPG", cor: "#e7a6b7" },
-      { nome: "Branco", imagem: "assets/IMG_5183.JPG", cor: "#fffaf7" },
+      { nome: "Preto", imagem: "assets/IMG_6969.JPG", cor: "#000000" },
+      { nome: "Azul", imagem: "assets/IMG_6971.JPG", cor: "#2e3f8f" },
+    ],
+  },
+
+  {
+    nome: "Conjunto Aura",
+    preco: 54.9,
+    categoria: "conforto",
+    cores: [
+      { nome: "Preto", imagem: "assets/IMG_4252.JPG", cor: "#000000" },
+      { nome: "Preto e branco", imagem: "assets/IMG_4248.JPG", cor: "#000000", cor: "#ffffff"},
+      
+    ],
+  },
+
+  {
+    nome: "Conjunto Afrontosa",
+    preco: 69.9,
+    categoria: "conforto",
+    cores: [
+      { nome: "Preto", imagem: "assets/IMG_2542.JPG", cor: "#151114" },
     ],
   },
 
 
   {
-    nome: "Calcinha Argola Rendada",
-    preco: 27.9,
+    nome: "Calcinha Impulsiva",
+    preco: 17.9,
     categoria: "conforto",
     cores: [
-      { nome: "Rosa", imagem: "assets/argola/IMG_3206.JPG", cor: "#fffaf7" },
-      { nome: "Branco", imagem: "assets/argola/IMG_3200.JPG", cor: "#e7a6b7" },
-      { nome: "Preto", imagem: "assets/argola/IMG_3209.JPG", cor: "#151114" },
+      { nome: "Branca", imagem: "assets/IMG_2222.png", cor: "#ffffff" },
+      
     ],
   },
 
   {
-    nome: "Calcinha Argola Rendada",
-    preco: 27.9,
+    nome: "Calcinha Thais",
+    preco: 19.9,
     categoria: "conforto",
     cores: [
-      { nome: "Rosa", imagem: "assets/argola/IMG_3206.JPG", cor: "#fffaf7" },
-      { nome: "Branco", imagem: "assets/argola/IMG_3200.JPG", cor: "#e7a6b7" },
-      { nome: "Preto", imagem: "assets/argola/IMG_3209.JPG", cor: "#151114" },
-    ],
-  },
-
-  {
-    nome: "Calcinha Argola Rendada",
-    preco: 27.9,
-    categoria: "conforto",
-    cores: [
-      { nome: "Rosa", imagem: "assets/argola/IMG_3206.JPG", cor: "#fffaf7" },
-      { nome: "Branco", imagem: "assets/argola/IMG_3200.JPG", cor: "#e7a6b7" },
-      { nome: "Preto", imagem: "assets/argola/IMG_3209.JPG", cor: "#151114" },
+      { nome: "Azul Marinho", imagem: "assets/IMG_3331.JPEG", cor: "#1b285d" },
+      { nome: "Rosa", imagem: "assets/IMG_3332.JPEG", cor: "#e836a6" },
+      { nome: "Vermelho", imagem: "assets/IMG_3333.JPEG", cor: "#d10d0d" },
+       { nome: "preto", imagem: "assets/IMG_3334.JPEG", cor: "#000000" },
     ],
   },
 ];
