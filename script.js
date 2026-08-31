@@ -98,10 +98,10 @@ const products = [
     preco: 19.9,
     categoria: "conforto",
     cores: [
-      { nome: "Azul Marinho", imagem: "assets/IMG_3331.JPEG", cor: "#1b285d" },
-      { nome: "Rosa", imagem: "assets/IMG_3332.JPEG", cor: "#e836a6" },
-      { nome: "Vermelho", imagem: "assets/IMG_3333.JPEG", cor: "#d10d0d" },
-       { nome: "preto", imagem: "assets/IMG_3334.JPEG", cor: "#000000" },
+      { nome: "Azul Marinho", imagem: "assets/IMG_3331.jpeg", cor: "#1b285d" },
+      { nome: "Rosa", imagem: "assets/IMG_3332.jpeg", cor: "#e836a6" },
+      { nome: "Vermelho", imagem: "assets/IMG_3333.jpeg", cor: "#d10d0d" },
+       { nome: "preto", imagem: "assets/IMG_3334.jpeg", cor: "#000000" },
     ],
   },
 ];
