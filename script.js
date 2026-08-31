@@ -4,7 +4,7 @@ const products = [
   {
     nome: "Calcinha Lesy Sexy",
     preco: 21.9,
-    categoria: "renda",
+    categoria: "Calcinha",
     cores: [
       { nome: "Preto", imagem: "assets/IMG_5168.JPG", cor: "#151114" },
       { nome: "Vermelho", imagem: "assets/IMG_5170.JPG", cor: "#9f1f32" },
@@ -16,7 +16,7 @@ const products = [
     {
     nome: "Calcinha Argola Rendada",
     preco: 20.9,
-    categoria: "conforto",
+    categoria: "Calcinha",
     cores: [
       { nome: "Branco", imagem: "assets/argola/IMG_3206.JPG", cor: "#fffaf7" },
       { nome: "Rosa", imagem: "assets/argola/IMG_3200.JPG", cor: "#e7a6b7" },
@@ -26,7 +26,7 @@ const products = [
   {
     nome: "Calcinha Regulável",
     preco: 16.9,
-    categoria: "premium",
+    categoria: "Calcinha",
     cores: [
       { nome: "Preto", imagem: "assets/IMG_2849.JPG", cor: "#151114" },
     ],
@@ -34,7 +34,7 @@ const products = [
   { 
     nome: "Calcinha Palloma",
     preco: 24.9,
-    categoria: "conforto",
+    categoria: "Calcinha",
     cores: [
       { nome: "Preto", imagem: "assets/IMG_4698.JPG", cor: "#151114" },
       { nome: "Rosa", imagem: "assets/IMG_0000.png", cor: "#e2587d" },
@@ -44,7 +44,7 @@ const products = [
   {
     nome: "Conjunto Ravenna",
     preco: 44.9,
-    categoria: "premium",
+    categoria: "Conjunto",
     cores: [
       { nome: "Vermelho", imagem: "assets/EOSR2361.jpeg", cor: "#d10d0d" },
       { nome: "Preto", imagem: "assets/IMG_1111.png", cor: "#000000" },
@@ -55,7 +55,7 @@ const products = [
   {
     nome: "Calcinha Comfy",
     preco: 21.9,
-    categoria: "conforto",
+    categoria: "Calcinha",
     cores: [
       { nome: "Preto", imagem: "assets/IMG_6969.JPG", cor: "#000000" },
       { nome: "Azul", imagem: "assets/IMG_6971.JPG", cor: "#2e3f8f" },
@@ -65,7 +65,7 @@ const products = [
   {
     nome: "Conjunto Aura",
     preco: 54.9,
-    categoria: "conforto",
+    categoria: "Conjunto",
     cores: [
       { nome: "Preto", imagem: "assets/IMG_4252.JPG", cor: "#000000" },
       { nome: "Preto e branco", imagem: "assets/IMG_4248.JPG", cor: "#000000", cor: "#ffffff"},
@@ -76,7 +76,7 @@ const products = [
   {
     nome: "Conjunto Afrontosa",
     preco: 69.9,
-    categoria: "conforto",
+    categoria: "Conjunto",
     cores: [
       { nome: "Preto", imagem: "assets/IMG_2542.JPG", cor: "#151114" },
     ],
@@ -86,7 +86,7 @@ const products = [
   {
     nome: "Calcinha Impulsiva",
     preco: 17.9,
-    categoria: "conforto",
+    categoria: "Calcinha",
     cores: [
       { nome: "Branca", imagem: "assets/IMG_2222.png", cor: "#ffffff" },
       
@@ -96,7 +96,7 @@ const products = [
   {
     nome: "Calcinha Thais",
     preco: 19.9,
-    categoria: "conforto",
+    categoria: "Calcinha",
     cores: [
       { nome: "Azul Marinho", imagem: "assets/IMG_3331.jpeg", cor: "#1b285d" },
       { nome: "Rosa", imagem: "assets/IMG_3332.jpeg", cor: "#e836a6" },
