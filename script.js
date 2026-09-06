@@ -1,109 +1,49 @@
 // Substitua este número pelo WhatsApp real da La Belle, com DDI e DDD.
 const whatsappNumber = "5521974307694";
 const products = [
-  {
-    nome: "Calcinha Lesy Sexy",
-    preco: 21.9,
-    categoria: "Calcinha",
-    cores: [
-      { nome: "Preto", imagem: "assets/IMG_5168.JPG", cor: "#151114" },
-      { nome: "Vermelho", imagem: "assets/IMG_5170.JPG", cor: "#9f1f32" },
-      { nome: "Branco", imagem: "assets/IMG_5183.JPG", cor: "#fffaf7" },
-      { nome: "Rosa", imagem: "assets/IMG_5164.JPG", cor: "#e7a6b7" },
-    ],
-  },
-
-    {
-    nome: "Calcinha Argola Rendada",
-    preco: 20.9,
-    categoria: "Calcinha",
-    cores: [
-      { nome: "Branco", imagem: "assets/argola/IMG_3206.JPG", cor: "#fffaf7" },
-      { nome: "Rosa", imagem: "assets/argola/IMG_3200.JPG", cor: "#e7a6b7" },
-      { nome: "Nude", imagem: "assets/argola/IMG_3209.JPG", cor: "#E3C6A8" },
-    ],
-  },
-  {
-    nome: "Calcinha Regulável",
-    preco: 16.9,
-    categoria: "Calcinha",
-    cores: [
-      { nome: "Preto", imagem: "assets/IMG_2849.JPG", cor: "#151114" },
-    ],
-  },
-  { 
-    nome: "Calcinha Palloma",
-    preco: 24.9,
-    categoria: "Calcinha",
-    cores: [
-      { nome: "Preto", imagem: "assets/IMG_4698.JPG", cor: "#151114" },
-      { nome: "Rosa", imagem: "assets/IMG_0000.png", cor: "#e2587d" },
-      { nome: "Verde  ", imagem: "assets/IMG_7004.JPG", cor: "#235834" },
-    ],
-  },
-  {
-    nome: "Conjunto Ravenna",
-    preco: 44.9,
-    categoria: "Conjunto",
-    cores: [
-      { nome: "Vermelho", imagem: "assets/EOSR2361.jpeg", cor: "#d10d0d" },
-      { nome: "Preto", imagem: "assets/IMG_1111.png", cor: "#000000" },
-     
-    ],
-  },
-
-  {
-    nome: "Calcinha Comfy",
-    preco: 21.9,
-    categoria: "Calcinha",
-    cores: [
-      { nome: "Preto", imagem: "assets/IMG_6969.JPG", cor: "#000000" },
-      { nome: "Azul", imagem: "assets/IMG_6971.JPG", cor: "#2e3f8f" },
-    ],
-  },
-
-  {
-    nome: "Conjunto Aura",
-    preco: 54.9,
-    categoria: "Conjunto",
-    cores: [
-      { nome: "Preto", imagem: "assets/IMG_4252.JPG", cor: "#000000" },
-      { nome: "Preto e branco", imagem: "assets/IMG_4248.JPG", cor: "#000000", cor: "#ffffff"},
-      
-    ],
-  },
-
-  {
-    nome: "Conjunto Afrontosa",
-    preco: 69.9,
-    categoria: "Conjunto",
-    cores: [
-      { nome: "Preto", imagem: "assets/IMG_2542.JPG", cor: "#151114" },
-    ],
-  },
-
-
-  {
-    nome: "Calcinha Impulsiva",
-    preco: 17.9,
-    categoria: "Calcinha",
-    cores: [
-      { nome: "Branca", imagem: "assets/IMG_2222.png", cor: "#ffffff" },
-      
-    ],
-  },
-
-  {
-    nome: "Calcinha Thais",
-    preco: 19.9,
-    categoria: "Calcinha",
-    cores: [
-      { nome: "Azul Marinho", imagem: "assets/IMG_3331.jpeg", cor: "#1b285d" },
-      { nome: "Rosa", imagem: "assets/IMG_3332.jpeg", cor: "#e836a6" },
-      { nome: "Vermelho", imagem: "assets/IMG_3333.jpeg", cor: "#d10d0d" },
-       { nome: "preto", imagem: "assets/IMG_3334.jpeg", cor: "#000000" },
-    ],
-  },
+  { nome: "Calcinha Lesy Sexy", preco: 21.9, categoria: "Calcinha", cores: [
+    { nome: "Preto", imagem: "assets/IMG_5168.JPG", cor: "#151114" },
+    { nome: "Vermelho", imagem: "assets/IMG_5170.JPG", cor: "#9f1f32" },
+    { nome: "Branco", imagem: "assets/IMG_5183.JPG", cor: "#fffaf7" },
+    { nome: "Rosa", imagem: "assets/IMG_5164.JPG", cor: "#e7a6b7" },
+  ]},
+  { nome: "Calcinha Argola Rendada", preco: 20.9, categoria: "Calcinha", cores: [
+    { nome: "Branco", imagem: "assets/argola/IMG_3206.JPG", cor: "#fffaf7" },
+    { nome: "Rosa", imagem: "assets/argola/IMG_3200.JPG", cor: "#e7a6b7" },
+    { nome: "Nude", imagem: "assets/argola/IMG_3209.JPG", cor: "#E3C6A8" },
+  ]},
+  { nome: "Calcinha Regulável", preco: 16.9, categoria: "Calcinha", cores: [
+    { nome: "Preto", imagem: "assets/IMG_2849.JPG", cor: "#151114" },
+  ]},
+  { nome: "Calcinha Palloma", preco: 24.9, categoria: "Calcinha", cores: [
+    { nome: "Preto", imagem: "assets/IMG_4698.JPG", cor: "#151114" },
+    { nome: "Rosa", imagem: "assets/IMG_0000.png", cor: "#e2587d" },
+    { nome: "Verde", imagem: "assets/IMG_7004.JPG", cor: "#235834" },
+  ]},
+  { nome: "Conjunto Ravenna", preco: 44.9, categoria: "Conjunto", cores: [
+    { nome: "Vermelho", imagem: "assets/EOSR2361.jpeg", cor: "#d10d0d" },
+    { nome: "Preto", imagem: "assets/IMG_1111.png", cor: "#000000" },
+  ]},
+  { nome: "Calcinha Comfy", preco: 21.9, categoria: "Calcinha", cores: [
+    { nome: "Preto", imagem: "assets/IMG_6969.JPG", cor: "#000000" },
+    { nome: "Azul", imagem: "assets/IMG_6971.JPG", cor: "#2e3f8f" },
+  ]},
+  { nome: "Conjunto Aura", preco: 54.9, categoria: "Conjunto", cores: [
+    { nome: "Preto", imagem: "assets/IMG_4252.JPG", cor: "#000000" },
+    { nome: "Preto e branco", imagem: "assets/IMG_4248.JPG", cor: "#ffffff" },
+  ]},
+  { nome: "Conjunto Afrontosa", preco: 69.9, categoria: "Conjunto", cores: [
+    { nome: "Preto", imagem: "assets/IMG_2542.JPG", cor: "#151114" },
+  ]},
+  { nome: "Calcinha Impulsiva", preco: 17.9, categoria: "Calcinha", cores: [
+    { nome: "Branca", imagem: "assets/IMG_2222.png", cor: "#ffffff" },
+  ]},
+  { nome: "Calcinha Thais", preco: 19.9, categoria: "Calcinha", cores: [
+    { nome: "Azul Marinho", imagem: "assets/IMG_3331.jpeg", cor: "#1b285d" },
+    { nome: "Rosa", imagem: "assets/IMG_3332.jpeg", cor: "#e836a6" },
+    { nome: "Vermelho", imagem: "assets/IMG_3333.jpeg", cor: "#d10d0d" },
+    { nome: "Preto", imagem: "assets/IMG_3334.jpeg", cor: "#000000" },
+  ]},
 ];
 
 const productsContainer = document.getElementById("products");
@@ -122,48 +62,33 @@ function openWhatsapp(message) {
 }
 
 function renderProducts() {
-  productsContainer.innerHTML = products
-    .map((product, productIndex) => {
-      const selectedColor = product.cores[0];
-      const hasMultipleColors = product.cores.length > 1;
+  productsContainer.innerHTML = products.map((product, productIndex) => {
+    const selectedColor = product.cores[0];
+    const hasMultipleColors = product.cores.length > 1;
+    const imageLoading = productIndex < 2 ? "eager" : "lazy";
+    const imagePriority = productIndex < 2 ? "high" : "auto";
 
-      return `
-        <article class="product-card" data-category="${product.categoria}" data-product-index="${productIndex}" data-selected-color="0">
-          <div class="product-img">
-            <img src="${selectedColor.imagem}" alt="${product.nome} - ${selectedColor.nome}" data-fallback-image="${selectedColor.imagem}">
-          </div>
-          <div class="product-info">
-            <span>${categoryLabel(product.categoria)}</span>
-            <h3>${product.nome}</h3>
-            <strong>${money(product.preco)}</strong>
-            <p class="selected-color">Cor selecionada: <b>${selectedColor.nome}</b></p>
-            ${
-              hasMultipleColors
-                ? `<div class="color-options" aria-label="Escolha a cor de ${product.nome}">
-                    ${product.cores
-                      .map(
-                        (color, colorIndex) => `
-                          <button
-                            class="color-swatch${colorIndex === 0 ? " active" : ""}"
-                            type="button"
-                            style="--swatch-color:${color.cor}"
-                            data-color-index="${colorIndex}"
-                            aria-label="${color.nome}"
-                            title="${color.nome}"
-                          ></button>
-                        `
-                      )
-                      .join("")}
-                  </div>`
-                : ""
-            }
-            <p class="order-note">Faça sua encomenda diretamente pelo WhatsApp ♡</p>
-            <button class="order-whatsapp" type="button">Encomendar pelo WhatsApp</button>
-          </div>
-        </article>
-      `;
-    })
-    .join("");
+    return `
+      <article class="product-card" data-category="${product.categoria}" data-product-index="${productIndex}" data-selected-color="0">
+        <div class="product-img">
+          <img src="${selectedColor.imagem}" alt="${product.nome} - ${selectedColor.nome}" loading="${imageLoading}" fetchpriority="${imagePriority}" decoding="async" width="800" height="1000" data-fallback-image="${selectedColor.imagem}">
+        </div>
+        <div class="product-info">
+          <span>${categoryLabel(product.categoria)}</span>
+          <h3>${product.nome}</h3>
+          <strong>${money(product.preco)}</strong>
+          <p class="selected-color">Cor selecionada: <b>${selectedColor.nome}</b></p>
+          ${hasMultipleColors ? `<div class="color-options" aria-label="Escolha a cor de ${product.nome}">
+            ${product.cores.map((color, colorIndex) => `
+              <button class="color-swatch${colorIndex === 0 ? " active" : ""}" type="button" style="--swatch-color:${color.cor}" data-color-index="${colorIndex}" aria-label="${color.nome}" title="${color.nome}"></button>
+            `).join("")}
+          </div>` : ""}
+          <p class="order-note">Faça sua encomenda diretamente pelo WhatsApp ♡</p>
+          <button class="order-whatsapp" type="button">Encomendar pelo WhatsApp</button>
+        </div>
+      </article>
+    `;
+  }).join("");
 }
 
 function selectColor(card, colorIndex) {
@@ -174,14 +99,13 @@ function selectColor(card, colorIndex) {
 
   card.dataset.selectedColor = String(colorIndex);
   selectedColor.textContent = color.nome;
-
   card.querySelectorAll(".color-swatch").forEach((swatch) => {
     swatch.classList.toggle("active", Number(swatch.dataset.colorIndex) === colorIndex);
   });
 
   image.classList.add("is-changing");
-
   const nextImage = new Image();
+  nextImage.decoding = "async";
   nextImage.onload = () => {
     image.src = color.imagem;
     image.alt = `${product.nome} - ${color.nome}`;
@@ -205,10 +129,7 @@ renderProducts();
 
 document.querySelectorAll(".filter").forEach((filterButton) => {
   filterButton.addEventListener("click", () => {
-    document.querySelectorAll(".filter").forEach((button) => {
-      button.classList.remove("active");
-    });
-
+    document.querySelectorAll(".filter").forEach((button) => button.classList.remove("active"));
     filterButton.classList.add("active");
     applyFilter(filterButton.dataset.filter);
   });
@@ -216,7 +137,6 @@ document.querySelectorAll(".filter").forEach((filterButton) => {
 
 productsContainer.addEventListener("click", (event) => {
   if (!(event.target instanceof Element)) return;
-
   const swatch = event.target.closest(".color-swatch");
   const orderButton = event.target.closest(".order-whatsapp");
 
@@ -229,14 +149,7 @@ productsContainer.addEventListener("click", (event) => {
     const card = orderButton.closest(".product-card");
     const product = products[Number(card.dataset.productIndex)];
     const color = product.cores[Number(card.dataset.selectedColor)];
-    const message = `Olá! Tenho interesse em encomendar:
-
-Produto: ${product.nome}
-Cor: ${color.nome}
-Preço: ${money(product.preco)}
-
-Gostaria de saber mais informações sobre disponibilidade, tamanhos e entrega.`;
-
+    const message = `Olá! Tenho interesse em encomendar:\n\nProduto: ${product.nome}\nCor: ${color.nome}\nPreço: ${money(product.preco)}\n\nGostaria de saber mais informações sobre disponibilidade, tamanhos e entrega.`;
     openWhatsapp(message);
   }
 });
