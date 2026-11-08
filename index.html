@@ -4,72 +4,314 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Belle — Moda Íntima</title>
+  <meta name="description" content="La Belle — Moda íntima com elegância, conforto e delicadeza. Catálogo de calcinhas e conjuntos selecionados.">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#4a1524">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="assets/logo.webp" type="image/webp" fetchpriority="high">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" type="image/webp" href="assets/IMG_4252-800.webp" fetchpriority="high" imagesizes="100vw">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar">
-  <a class="brand" href="#inicio">La Belle</a>
-  <nav>
-    <a href="#inicio">Início</a>
-    <a href="#catalogo">Catálogo</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#contato">Contato</a>
-  </nav>
-</header>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-<main id="inicio">
-  <section class="hero">
-    <div class="hero-content">
-      <p class="eyebrow">LA BELLE • MODA ÍNTIMA</p>
-      <h1>Elegância que começa<br><em>em você.</em></h1>
-      <p>Descubra nossa seleção de calcinhas pensadas para unir delicadeza, conforto e beleza em todos os dias.</p>
-      <a class="btn" href="#catalogo">Ver catálogo</a>
+  <div class="announcement">
+    <p>Moda íntima selecionada · Atendimento exclusivo via WhatsApp · Encomendas com carinho</p>
+  </div>
+
+  <header class="header" id="header">
+    <button class="icon-btn menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+    </button>
+
+    <nav class="nav-desktop" aria-label="Principal">
+      <a href="#inicio">Início</a>
+      <a href="#categorias">Coleção</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#instagram">Instagram</a>
+    </nav>
+
+    <a class="logo" href="#inicio">La Belle</a>
+
+    <div class="header-actions">
+      <a class="icon-btn" href="https://www.instagram.com/labelleintimaoficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da La Belle">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="3.8" fill="none" stroke="currentColor" stroke-width="1.4"/><circle cx="17.15" cy="6.85" r="0.95" fill="currentColor"/></svg>
+      </a>
+      <button class="icon-btn" type="button" id="searchOpen" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn" type="button" id="accountBtn" aria-label="Falar com a La Belle">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M5.5 19c1.2-3.1 3.6-4.6 6.5-4.6s5.3 1.5 6.5 4.6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn bag-btn" type="button" id="bagOpen" aria-label="Abrir sacola">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5h11l-.8 11.2H7.3L6.5 8.5z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <span class="bag-count" id="bagCount" hidden>0</span>
+      </button>
     </div>
-  </section>
+  </header>
 
-  <section class="catalog" id="catalogo">
-    <div class="section-head">
+  <div class="mobile-nav" id="mobileNav" hidden>
+    <div class="mobile-nav-panel">
+      <button class="icon-btn mobile-nav-close" type="button" aria-label="Fechar menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </button>
+      <a href="#inicio">Início</a>
+      <a href="#categorias">Coleção</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a href="https://www.instagram.com/labelleintimaoficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </div>
+
+  <div class="search-overlay" id="searchOverlay" hidden>
+    <div class="search-panel">
+      <form class="search-form" id="searchForm" role="search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M16 16l4 4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        <input type="search" id="searchInput" placeholder="Buscar peças..." autocomplete="off" aria-label="Buscar peças">
+        <button class="icon-btn" type="button" id="searchClose" aria-label="Fechar busca">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
+      </form>
+      <p class="search-hint">Digite o nome da peça e pressione Enter</p>
+    </div>
+  </div>
+
+  <aside class="drawer" id="bagDrawer" hidden>
+    <div class="drawer-backdrop" data-close-bag></div>
+    <div class="drawer-panel" role="dialog" aria-labelledby="bagTitle">
+      <div class="drawer-head">
+        <h2 id="bagTitle">Sua sacola</h2>
+        <button class="icon-btn" type="button" data-close-bag aria-label="Fechar sacola">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="drawer-body" id="bagItems"></div>
+      <div class="drawer-foot" id="bagFoot" hidden>
+        <div class="bag-total">
+          <span>Total estimado</span>
+          <strong id="bagTotal"></strong>
+        </div>
+        <p class="bag-note">A encomenda é finalizada pelo WhatsApp, com consulta de tamanhos e disponibilidade.</p>
+        <button class="btn btn-solid" type="button" id="bagCheckout">Encomendar pelo WhatsApp</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="modal" id="productModal" hidden>
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="icon-btn modal-close" type="button" data-close-modal aria-label="Fechar">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-grid" id="modalContent"></div>
+    </div>
+  </div>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-media">
+        <div class="media-ph" style="background-image:url('assets/IMG_4252-lqip.webp')"></div>
+        <img
+          src="assets/IMG_4252-800.webp"
+          srcset="assets/IMG_4252-480.webp 480w, assets/IMG_4252-800.webp 800w, assets/IMG_4252.webp 1200w"
+          sizes="100vw"
+          alt="Conjunto Aura La Belle"
+          width="800"
+          height="1067"
+          fetchpriority="high"
+          loading="eager"
+          decoding="sync"
+          class="hero-photo">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">La Belle · Moda íntima</p>
+        <h1>Elegância que começa<br><em>em você.</em></h1>
+        <p class="hero-lead">Peças selecionadas para unir delicadeza, conforto e presença em cada detalhe da sua rotina.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#catalogo">Explorar a coleção</a>
+          <a class="btn btn-ghost" href="#categorias">Ver categorias</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Diferenciais">
+      <article>
+        <span>01</span>
+        <h3>Seleção cuidadosa</h3>
+        <p>Peças escolhidas com atenção ao caimento, ao toque e aos detalhes.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h3>Atendimento próximo</h3>
+        <p>Tire dúvidas de cores, tamanhos e disponibilidade pelo WhatsApp.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h3>Encomenda simples</h3>
+        <p>Escolha a peça, selecione a cor e fale com a La Belle em um toque.</p>
+      </article>
+      <article>
+        <span>04</span>
+        <h3>Beleza no cotidiano</h3>
+        <p>Lingerie pensada para autoestima, conforto e sofisticação discreta.</p>
+      </article>
+    </section>
+
+    <section class="categories" id="categorias">
+      <div class="section-intro reveal">
+        <p class="eyebrow">A coleção</p>
+        <h2>Encontre o seu momento</h2>
+        <p>Navegue pelas categorias e descubra peças que combinam com o seu estilo.</p>
+      </div>
+      <div class="category-grid">
+        <button class="category-card reveal" type="button" data-jump-filter="Calcinha">
+          <img src="assets/IMG_5168-480.webp" srcset="assets/IMG_5168-480.webp 480w, assets/IMG_5168-800.webp 800w, assets/IMG_5168.webp 1200w" sizes="(max-width: 800px) 100vw, 33vw" alt="Calcinhas La Belle" width="480" height="640" loading="lazy" decoding="async">
+          <div class="category-copy">
+            <p>Lingerie do dia</p>
+            <h3>Calcinhas</h3>
+            <span>Ver peças</span>
+          </div>
+        </button>
+        <button class="category-card reveal" type="button" data-jump-filter="Conjunto">
+          <img src="assets/IMG_4252-480.webp" srcset="assets/IMG_4252-480.webp 480w, assets/IMG_4252-800.webp 800w, assets/IMG_4252.webp 1200w" sizes="(max-width: 800px) 100vw, 33vw" alt="Conjuntos La Belle" width="480" height="640" loading="lazy" decoding="async">
+          <div class="category-copy">
+            <p>Presença completa</p>
+            <h3>Conjuntos</h3>
+            <span>Ver peças</span>
+          </div>
+        </button>
+        <button class="category-card reveal" type="button" data-jump-filter="all">
+          <img src="assets/IMG_2542-480.webp" srcset="assets/IMG_2542-480.webp 480w, assets/IMG_2542-800.webp 800w, assets/IMG_2542.webp 1200w" sizes="(max-width: 800px) 100vw, 33vw" alt="Coleção La Belle" width="480" height="640" loading="lazy" decoding="async">
+          <div class="category-copy">
+            <p>Toda a seleção</p>
+            <h3>Catálogo</h3>
+            <span>Ver peças</span>
+          </div>
+        </button>
+      </div>
+    </section>
+
+    <section class="featured" id="destaques">
+      <div class="section-intro reveal">
+        <p class="eyebrow">Em evidência</p>
+        <h2>Peças em destaque</h2>
+        <p>Uma curadoria da coleção para quem busca presença, conforto e acabamento.</p>
+      </div>
+      <div class="products products-featured" id="featuredProducts"></div>
+    </section>
+
+    <section class="promo reveal" id="essencial">
+      <div class="promo-media">
+        <img src="assets/IMG_4698-480.webp" srcset="assets/IMG_4698-480.webp 480w, assets/IMG_4698-800.webp 800w, assets/IMG_4698.webp 1200w" sizes="(max-width: 900px) 100vw, 50vw" alt="Calcinha Palloma La Belle" width="480" height="640" loading="lazy" decoding="async">
+      </div>
+      <div class="promo-copy">
+        <p class="eyebrow">Essenciais La Belle</p>
+        <h2>Delicadeza para todos os dias</h2>
+        <p>Uma seleção pensada para acompanhar a sua rotina com leveza, caimento e um toque de exclusividade.</p>
+        <a class="btn btn-solid" href="#catalogo">Ver a coleção completa</a>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalogo">
+      <div class="section-head reveal">
+        <div>
+          <p class="eyebrow">Nossa coleção</p>
+          <h2>Escolha a sua favorita</h2>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filtrar por categoria">
+          <button class="filter active" type="button" data-filter="all">Todas</button>
+          <button class="filter" type="button" data-filter="Calcinha">Calcinha</button>
+          <button class="filter" type="button" data-filter="Sutiã">Sutiã</button>
+          <button class="filter" type="button" data-filter="Conjunto">Conjunto</button>
+        </div>
+      </div>
+      <p class="empty-state" id="emptyState" hidden>Nenhuma peça nesta categoria no momento. Fale conosco pelo WhatsApp para consultar novidades.</p>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="lookbook">
+      <figure class="lookbook-item reveal">
+        <img src="assets/IMG_4248-480.webp" srcset="assets/IMG_4248-480.webp 480w, assets/IMG_4248-800.webp 800w, assets/IMG_4248.webp 1200w" sizes="(max-width: 800px) 100vw, 50vw" alt="Conjunto Aura La Belle" width="480" height="640" loading="lazy" decoding="async">
+      </figure>
+      <figure class="lookbook-item reveal">
+        <img src="assets/IMG_5164-480.webp" srcset="assets/IMG_5164-480.webp 480w, assets/IMG_5164-800.webp 800w, assets/IMG_5164.webp 1200w" sizes="(max-width: 800px) 100vw, 50vw" alt="Calcinha Lesy Sexy La Belle" width="480" height="640" loading="lazy" decoding="async">
+      </figure>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="about-copy reveal">
+        <p class="eyebrow">Sobre a La Belle</p>
+        <h2>Beleza, conforto<br>e autoestima.</h2>
+        <p>Na La Belle, cada peça é escolhida para valorizar a sua rotina com um toque especial. Nosso catálogo foi criado para você comprar com praticidade e encontrar o modelo que combina com o seu estilo.</p>
+        <a class="btn btn-light" href="#contato">Falar com a marca</a>
+      </div>
+      <div class="about-aside reveal">
+        <article class="about-card">
+          <span>La Belle</span>
+          <h3>Feito para você</h3>
+          <p>Peças selecionadas com carinho e atenção aos detalhes, para uma experiência íntima, elegante e confiante.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="instagram" id="instagram">
+      <a class="instagram-invite" href="https://www.instagram.com/labelleintimaoficial/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><rect x="3.6" y="3.6" width="16.8" height="16.8" rx="5" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="12" cy="12" r="3.8" fill="none" stroke="currentColor" stroke-width="1.3"/><circle cx="17.15" cy="6.85" r="0.9" fill="currentColor"/></svg>
+        <p class="eyebrow">Acompanhe a La Belle</p>
+        <h2>@labelleintimaoficial</h2>
+        <span>Siga no Instagram</span>
+      </a>
+    </section>
+
+    <section class="contact" id="contato">
+      <p class="eyebrow">Fale conosco</p>
+      <h2>Quer fazer o seu pedido?</h2>
+      <p>Fale com a La Belle pelo WhatsApp para consultar opções, tamanhos, cores e disponibilidade.</p>
+      <button class="btn btn-solid" type="button" id="whatsappBtn">Falar com a La Belle pelo WhatsApp</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand-block">
+        <a class="footer-brand" href="#inicio">La Belle</a>
+        <p>Moda íntima com elegância, delicadeza e presença. Uma seleção para valorizar você.</p>
+      </div>
       <div>
-        <p class="eyebrow">NOSSA COLEÇÃO</p>
-        <h2>Escolha sua favorita</h2>
+        <h3>Navegação</h3>
+        <a href="#inicio">Início</a>
+        <a href="#categorias">Coleção</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#instagram">Instagram</a>
       </div>
-      <div class="filters">
-        <button class="filter active" data-filter="all">Todas</button>
-        <button class="filter" data-filter="Calcinha">Calcinha</button>
-        <button class="filter" data-filter="Sutiã">Sutiã</button>
-        <button class="filter" data-filter="Conjunto">Conjunto</button>
+      <div>
+        <h3>Atendimento</h3>
+        <a href="#contato">Contato</a>
+        <button type="button" id="footerWhatsapp">WhatsApp</button>
+        <a href="#catalogo">Encomendar</a>
+      </div>
+      <div>
+        <h3>Redes</h3>
+        <a href="https://www.instagram.com/labelleintimaoficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.instagram.com/labelleintimaoficial/" target="_blank" rel="noopener noreferrer">@labelleintimaoficial</a>
+        <p>Peças selecionadas, atendimento próximo e uma experiência feita para o seu ritmo.</p>
       </div>
     </div>
-
-    <div class="products" id="products"></div>
-  </section>
-
-  <section class="about" id="sobre">
-    <div>
-      <p class="eyebrow">SOBRE A LA BELLE</p>
-      <h2>Beleza, conforto e autoestima.</h2>
-      <p>Na La Belle, cada peça é escolhida para valorizar a sua rotina com um toque especial. Nosso catálogo foi criado para você comprar com praticidade e encontrar o modelo que combina com o seu estilo.</p>
+    <div class="footer-bottom">
+      <p>© 2026 La Belle — Moda Íntima</p>
+      <p>labelle.blog</p>
     </div>
-    <div class="about-card"><span>♡</span><h3>Feito para você</h3><p>Peças selecionadas com carinho e atenção aos detalhes.</p></div>
-  </section>
+  </footer>
 
-  <section class="contact" id="contato">
-    <p class="eyebrow">FALE CONOSCO</p>
-    <h2>Quer fazer seu pedido?</h2>
-    <p>Fale com a La Belle pelo WhatsApp para consultar opções, tamanhos, cores e disponibilidade.</p>
-    <button class="btn" id="whatsappBtn">Falar com a La Belle pelo WhatsApp</button>
-  </section>
-</main>
-
-<footer>
-  <a class="footer-brand" href="#inicio">La Belle</a>
-  <p>© 2026 La Belle — Moda Íntima</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
