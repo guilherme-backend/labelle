@@ -325,12 +325,18 @@ function renderBag() {
 
 function openBag() {
   document.getElementById("bagDrawer").hidden = false;
-  document.body.style.overflow = "hidden";
+  syncPageScrollLock();
 }
 
 function closeBag() {
   document.getElementById("bagDrawer").hidden = true;
-  document.body.style.overflow = "";
+  syncPageScrollLock();
+}
+
+function syncPageScrollLock() {
+  const bagIsOpen = !document.getElementById("bagDrawer").hidden;
+  const modalIsOpen = !document.getElementById("productModal").hidden;
+  document.body.style.overflow = bagIsOpen || modalIsOpen ? "hidden" : "";
 }
 
 function openModal(productIndex, colorIndex) {
@@ -368,12 +374,12 @@ function openModal(productIndex, colorIndex) {
   content.dataset.productIndex = String(productIndex);
   content.dataset.selectedColor = String(colorIndex);
   modal.hidden = false;
-  document.body.style.overflow = "hidden";
+  syncPageScrollLock();
 }
 
 function closeModal() {
   document.getElementById("productModal").hidden = true;
-  document.body.style.overflow = "";
+  syncPageScrollLock();
 }
 
 function bindCardEvents(root) {

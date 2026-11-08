@@ -260,7 +260,7 @@ a { color: inherit; }
   position: relative;
   z-index: 3;
   padding: 0 7% 9%;
-  max-width: 760px;
+  max-width: min(48vw, 760px);
 }
 .eyebrow {
   margin: 0 0 18px;
@@ -913,6 +913,22 @@ h1 em, h2 em { font-style: italic; color: var(--gold-soft); }
   .instagram { padding: 72px 6%; }
   .category-card { min-height: 420px; }
   .product-actions { opacity: 1; transform: none; }
+}
+
+@media (min-width: 901px) {
+  .hero-media {
+    inset: 0 0 0 auto;
+    width: min(46vw, calc(86svh * 0.75));
+  }
+  .hero-photo {
+    object-fit: contain;
+    object-position: center;
+  }
+  .hero-overlay {
+    background:
+      linear-gradient(90deg, rgba(46, 14, 24, 0.92) 0%, rgba(46, 14, 24, 0.72) 47%, rgba(46, 14, 24, 0.08) 100%),
+      linear-gradient(180deg, rgba(46, 14, 24, 0.08), rgba(46, 14, 24, 0.24));
+  }
 }
 
 @media (max-width: 620px) {
